@@ -1,0 +1,42 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --radius: 0.75rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-primary text-text-primary;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-padding {
+  @apply py-20 sm:py-24 lg:py-32;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-accent-blue to-accent-cyan bg-clip-text text-transparent;
+}
+
+.modern-gradient {
+  background: linear-gradient(145deg, #161B22 0%, #0D1117 100%);
+}
+
+.card-glow-border {
+  @apply border border-border-color bg-dark-secondary rounded-2xl transition-all duration-300;
+}
+
+.card-glow-border:hover {
+  border-color: #58A6FF;
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.2);
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.arogyalens.com/sitemap.xml
